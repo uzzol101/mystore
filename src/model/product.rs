@@ -6,6 +6,13 @@ use crate::db::{establish_connection, PgPooledConnection};
 use actix_web::{web};
 use crate::helper::db::{pool_handler};
 
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Person { 
+  pub name: String,
+  pub age: i32,
+}
+
 #[derive(Debug, Serialize, Deserialize, Queryable, AsChangeset)]
 pub struct Product {
   pub id: i32,
