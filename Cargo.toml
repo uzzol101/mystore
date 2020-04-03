@@ -1,5 +1,5 @@
 [package]
-name = "practical_rust_v1"
+name = "mystore"
 version = "0.1.0"
 authors = ["uzzol <davepillowgood@gmail.com>"]
 edition = "2018"
@@ -13,3 +13,6 @@ serde = "1.0.104"
 serde_json = "1.0.48"
 diesel = {version = "1.4.3", features = ["postgres","r2d2"]}
 dotenv = "0.15.0"
+bytes = "0.4"
+actix-http-test = "0.2.0"
+actix-http = "0.2.1"

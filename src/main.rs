@@ -10,6 +10,7 @@ mod db;
 mod schema;
 mod helper;
 
+
 async fn index() -> HttpResponse {
     HttpResponse::Ok().body("Hello from actix")
 }
