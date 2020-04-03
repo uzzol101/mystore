@@ -68,6 +68,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "actix-cors"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0a6206917d5c0fdd79d81cec9ef02d3e802df4abf276d96241e1f595d971e002"
+dependencies = [
+ "actix-service 1.0.5",
+ "actix-web",
+ "derive_more 0.99.3",
+ "futures 0.3.4",
+]
+
+[[package]]
 name = "actix-http"
 version = "0.2.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1356,6 +1368,7 @@ dependencies = [
 name = "mystore"
 version = "0.1.0"
 dependencies = [
+ "actix-cors",
  "actix-http 0.2.11",
  "actix-http-test",
  "actix-rt 1.0.0",

@@ -21,7 +21,7 @@ pub struct Product {
   pub price: Option<i32>,
 }
 
-#[derive(Debug, Insertable, Deserialize, Queryable)]
+#[derive(Debug, Insertable, Deserialize, Queryable, Serialize)]
 #[table_name = "products"]
 pub struct NewProduct {
   pub name: String,
