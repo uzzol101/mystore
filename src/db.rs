@@ -16,7 +16,7 @@ pub fn init_pool(db_url: &str) -> Result<PgPool, PoolError> {
 
 pub fn establish_connection() -> PgPool {
     dotenv().ok();
-    let db_url = env::var("DATABASE_URL_TEST").expect("database url not set");
+    let db_url = env::var("DATABASE_URL").expect("database url not set");
     init_pool(&db_url).unwrap()
 }
 
